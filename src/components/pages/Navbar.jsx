@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { DiCode } from "react-icons/di";
+import { MdFingerprint } from "react-icons/md";
 import { Button } from "./Button";
 import "./Navbar.css"
 
@@ -27,8 +27,8 @@ window.addEventListener('resize', showButton);
             <div className="navbar">
                 <div className="navbar-container container">
                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                   <DiCode className="navbar-icon"/>
-                      ROMAR
+                   <MdFingerprint className="navbar-icon"/>
+                      LAVASH
                    </Link>
                    <div className="menu-icon" onClick={handleClick}>
                       {click ? <FaTimes />: <FaBars />}
